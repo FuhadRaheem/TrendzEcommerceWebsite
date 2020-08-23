@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trendz | Online Shopping Website</title>
+
+    <!--Font Awesome CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!--UBUNTU Font Family-->
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!--Custom Styles CSS-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <main>
+    <header>
+        <div class="top-nav-bar">
+            <div class="search-box">
+                <!--Responsive Menu Start-->
+                <i class="fa fa-bars" aria-hidden="true" id="menu-btn" onclick="openmenu()"></i>
+                <i class="fa fa-times" aria-hidden="true" id="close-btn" onclick="closemenu()"></i>
+                <!--Responsive Menu End /-->
+
+                <!--Logo & Search Bar Start-->
+                <img src="images/logo-transparent.png" alt="logo" class="logo">
+                <input type="text" class="form-control" placeholder="Search products, brands and categories">
+                <span class="input-group-text">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+                <!--Logo & Search Bar End /-->
+            </div>
+
+            <!--Top Menu Start-->
+            <div class="menu-bar">
+                <ul>
+                    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                         Cart</a></li>
+                    <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i>
+                        Sign Up</a></li>
+                    <li><a href="#"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                        Sign In</a></li>   
+                </ul>
+            </div>  
+            <!--Top Menu End /-->          
+        </div>
+
+        <!--Left Side Menu Start-->
+        <section class="header">
+            <div class="side-menu" id="side-menu">
+                <ul>
+                    <li>Deals Of The Day <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-1</li>
+                            <li>Sub Menu-1</li>
+                            <li>Sub Menu-1</li>
+                            <li>Sub Menu-1</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-mobile products" aria-hidden="true"></i>
+                        Mobiles <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-2</li>
+                            <li>Sub Menu-2</li>
+                            <li>Sub Menu-2</li>
+                            <li>Sub Menu-2</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-laptop" aria-hidden="true"></i>
+                        Computers <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-3</li>
+                            <li>Sub Menu-3</li>
+                            <li>Sub Menu-3</li>
+                            <li>Sub Menu-3</li>
+                        </ul>
+                    </li>
+                    <li><i class='fas fa-tshirt'></i>Mens Wear <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-4</li>
+                            <li>Sub Menu-4</li>
+                            <li>Sub Menu-4</li>
+                            <li>Sub Menu-4</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-female" aria-hidden="true"></i>
+                        Womens Wear <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-5</li>
+                            <li>Sub Menu-5</li>
+                            <li>Sub Menu-5</li>
+                            <li>Sub Menu-5</li>
+                        </ul>
+                    </li>
+                    <li><i class='fas fa-baby-carriage'></i>Baby Necessities <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-7</li>
+                            <li>Sub Menu-7</li>
+                            <li>Sub Menu-7</li>
+                            <li>Sub Menu-7</li>
+                        </ul>
+                    </li>
+                    <li><i class='fas fa-swimmer'></i>Sports <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-8</li>
+                            <li>Sub Menu-8</li>
+                            <li>Sub Menu-8</li>
+                            <li>Sub Menu-8</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-gamepad" aria-hidden="true"></i>
+                        Games <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-9</li>
+                            <li>Sub Menu-9</li>
+                            <li>Sub Menu-9</li>
+                            <li>Sub Menu-9</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-book" aria-hidden="true"></i>
+                        Books <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-11</li>
+                            <li>Sub Menu-11</li>
+                            <li>Sub Menu-11</li>
+                            <li>Sub Menu-11</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-heart" aria-hidden="true"></i>
+                        Health &amp; Beauty <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-12</li>
+                            <li>Sub Menu-12</li>
+                            <li>Sub Menu-12</li>
+                            <li>Sub Menu-12</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-home" aria-hidden="true"></i>
+                        Home &amp; Office <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-13</li>
+                            <li>Sub Menu-13</li>
+                            <li>Sub Menu-13</li>
+                            <li>Sub Menu-13</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-television" aria-hidden="true"></i>
+                        Electronics <i class="fa fa-angle-right products aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-14</li>
+                            <li>Sub Menu-14</li>
+                            <li>Sub Menu-14</li>
+                            <li>Sub Menu-14</li>
+                        </ul>
+                    </li>
+                    <li><i class="fa fa-car" aria-hidden="true"></i>
+                        Automobile <i class="fa fa-angle-right products" aria-hidden="true"></i>
+                        <ul>
+                            <li>Sub Menu-15</li>
+                            <li>Sub Menu-15</li>
+                            <li>Sub Menu-15</li>
+                            <li>Sub Menu-15</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--Left Side Menu End /-->
+    </header>
+
+    <!--Slider Start-->
+    <div class="slider">
+        <div id="slider" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/slider-1.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider-2.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider-3.jpg" class="d-block w-100">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slider-4.jpg" class="d-block w-100">
+              </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#slider" data-slide-to="0" class="active"></li>
+                <li data-target="#slider" data-slide-to="1"></li>
+                <li data-target="#slider" data-slide-to="2"></li>
+                <li data-target="#slider" data-slide-to="3"></li>
+              </ol>
+          </div>
+    </div>
+    <!--Slider End /-->
+
+    <!--Right Side Menu Start-->
+    <section class="right-menu">
+        <div class="header-two">
+            <div class="right-side-menu" id="right-side-menu">
+                <ul>
+                    <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>
+                        Contact Us</a></li>
+                    <li><a href="#"><i class="fa fa-home home-right" aria-hidden="true"></i>
+                        Sell On Trendz</a></li>
+                    <li><a href="#"><i class="fa fa-archive" aria-hidden="true"></i>
+                        Return Policy</a></li>  
+                </ul>
+            </div>
+        </div>
+        <div class="gif-image">
+            <a href="#"><img src="images/gif1.gif" alt="gif-img" class="gif-img"></a>
+        </div>
+    </section>
+    <!--Right Side Menu End /-->
+
+    <!--Top Selling Products Start-->
+        <section class="top-selling">
+            <h2>Top selling items</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-1.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-2.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-3.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-4.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-5.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-6.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-7.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 display-products">
+                        <a href="#">
+                            <img src="images/product-8.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-9.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-10.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-11.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6 display-products">
+                        <a href="#">
+                            <img src="images/product-12.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!--Top Selling Products End /-->
+
+    <!--Deals Of The Day Start-->
+       <section class="deals">
+           <div class="deals-head">
+               <h2>Deals of the Day | Just For You</h2>
+               <p class="see-all"> See All <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+            </div>
+           <div class="container">
+               <div class="row">
+                   <div class="col-md-2 col-sm-6">
+                        <a href="#">
+                            <img src="images/product-13.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                   </div>
+                   <div class="col-md-2 col-sm-6">
+                        <a href="#">
+                            <img src="images/product-14.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <a href="#">
+                            <img src="images/product-15.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <a href="#">
+                            <img src="images/product-16.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <a href="#">
+                            <img src="images/product-17.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+                    <div class="col-md-2 col-sm-6">
+                        <a href="#">
+                            <img src="images/product-18.jpg" class="p-duct" alt=""> 
+                            <p class="product-name">Product Name</p>
+                            <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                        </a>
+                    </div>
+               </div>
+           </div>
+       </section>
+
+    <!--Deals Of The Day End /-->
+
+    <!--Shop Our Collections Start-->
+    <section class="collections">
+        <h2>Shop Our Collections</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-6 display-products">
+                    <a href="#">
+                        <img src="images/product-19.png" class="p-duct" alt=""> 
+                        <p class="product-name">Product Name</p>
+                        <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 display-products">
+                    <a href="#">
+                        <img src="images/product-20.jpg" class="p-duct" alt=""> 
+                        <p class="product-name">Product Name</p>
+                        <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 display-products">
+                    <a href="#">
+                        <img src="images/product-21.jpg" class="p-duct" alt=""> 
+                        <p class="product-name">Product Name</p>
+                        <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 display-products">
+                    <a href="#">
+                        <img src="images/product-22.jpg" class="p-duct" alt=""> 
+                        <p class="product-name">Product Name</p>
+                        <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 display-products">
+                    <a href="#">
+                        <img src="images/product-23.jpg" class="p-duct" alt=""> 
+                        <p class="product-name">Product Name</p>
+                        <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                    </a>
+                </div>
+                <div class="col-md-2 col-sm-6 display-products">
+                    <a href="#">
+                        <img src="images/product-24.jpg" class="p-duct" alt=""> 
+                        <p class="product-name">Product Name</p>
+                        <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Shop Our Collections End /-->
+
+    <!--Two Col ADs Start-->
+    <section class="two-ads">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <img src="images/twoAds1.jpg" alt="">
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <img src="images/twoAds2.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Two Col ADs End /-->
+
+    <!--Enjoy Free Shipping Start-->
+    <section class="deals">
+        <div class="deals-head-freeShipping">
+            <h2>Enjoy Free Shipping Now | On Everything!</h2>
+            <p class="see-all"> See All <i class="fa fa-angle-right" aria-hidden="true"></i></p>
+         </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-6">
+                     <a href="#">
+                         <img src="images/product-25.jpg" class="p-duct" alt=""> 
+                         <p class="product-name">Product Name</p>
+                         <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                     </a>
+                </div>
+                <div class="col-md-2 col-sm-6">
+                     <a href="#">
+                         <img src="images/product-26.jpg" class="p-duct" alt=""> 
+                         <p class="product-name">Product Name</p>
+                         <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                     </a>
+                 </div>
+                 <div class="col-md-2 col-sm-6">
+                     <a href="#">
+                         <img src="images/product-27.jpg" class="p-duct" alt=""> 
+                         <p class="product-name">Product Name</p>
+                         <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                     </a>
+                 </div>
+                 <div class="col-md-2 col-sm-6">
+                     <a href="#">
+                         <img src="images/product-28.jpg" class="p-duct" alt=""> 
+                         <p class="product-name">Product Name</p>
+                         <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                     </a>
+                 </div>
+                 <div class="col-md-2 col-sm-6">
+                     <a href="#">
+                         <img src="images/product-29.jpg" class="p-duct" alt=""> 
+                         <p class="product-name">Product Name</p>
+                         <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                     </a>
+                 </div>
+                 <div class="col-md-2 col-sm-6">
+                     <a href="#">
+                         <img src="images/product-30.jpg" class="p-duct" alt=""> 
+                         <p class="product-name">Product Name</p>
+                         <p class="price-tag">&#8358;50,000 - <span class="old-price">&#8358;75,000</span></p>
+                     </a>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!--Enjoy Free Shipping End /-->
+
+    <!-- Footer Start -->
+    <footer class="page-footer font-small elegant-color">
+
+        <div class="top-footer">
+            <div class="container">
+    
+            <!-- Grid row-->
+            <div class="row py-4 d-flex align-items-center">
+    
+                <!-- Grid column -->
+                <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                    <h6 class="mb-0">Get connected with us on social networks!</h6>
+                </div>
+                <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+    
+                <!-- Facebook -->
+                <a class="fb-ic">
+                    <i class="fab fa-facebook-f white-text mr-4"> </i>
+                </a>
+                <!-- Twitter -->
+                <a class="tw-ic">
+                    <i class="fab fa-twitter white-text mr-4"> </i>
+                </a>
+                <!-- Google +-->
+                <a class="gplus-ic">
+                    <i class="fab fa-google-plus-g white-text mr-4"> </i>
+                </a>
+                <!--Linkedin -->
+                <a class="li-ic">
+                    <i class="fab fa-linkedin-in white-text mr-4"> </i>
+                </a>
+                <!--Instagram-->
+                <a class="ins-ic">
+                    <i class="fab fa-instagram white-text"> </i>
+                </a>
+    
+            </div>
+            <!-- Grid column -->
+    
+            </div>
+            <!-- Grid row-->
+    
+        </div>
+        </div>
+    
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left pt-4 pt-md-5">
+    
+        <!-- Grid row -->
+        <div class="row mt-1 mt-md-0 mb-4 mb-md-0">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+    
+                <!-- Links -->
+                <h5>About me</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <p class="foot-desc mb-0">
+                    Trendz is your number one online shopping site in Nigeria. We are an online store where you can purchase all your Necessities. What more? You can have them delivered directly to you. 
+                </p>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+    
+                <!-- Links -->
+                <h5>Products</h5>
+                <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+        
+                <ul class="list-unstyled foot-desc">
+                    <li class="mb-2">
+                        <a href="#!">Mobile</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#!">Fashion</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#!">Baby Necessities</a>
+                    </li>
+                    <li class="mb-2">
+                        <a href="#!">Home &amp; Office</a>
+                    </li>
+                </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+    
+            <!-- Links -->
+            <h5>Useful links</h5>
+            <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+    
+            <ul class="list-unstyled foot-desc">
+                <li class="mb-2">
+                    <a href="#!">Your Account</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#!">Become an Affiliate</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#!">Shipping Rates</a>
+                </li>
+                <li class="mb-2">
+                    <a href="#!">Help</a>
+                </li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+            <hr class="clearfix w-100 d-md-none">
+    
+            <!-- Grid column -->
+            <div class="col-md-3 mx-auto mt-3 mt-md-0 mb-0 mb-md-4">
+    
+            <!-- Links -->
+            <h5>Contacts</h5>
+            <hr class="color-primary mb-4 mt-0 d-inline-block mx-auto w-60">
+    
+            <ul class="fa-ul foot-desc ml-4">
+                <li class="mb-2"><span class="fa-li"><i class="far fa-map"></i></span>I Do not Know My <Address></Address>
+                </li>
+                <li class="mb-2"><span class="fa-li"><i class="fas fa-phone-alt"></i></span>+234(0) 000 0000 000</li>
+                <li class="mb-2"><span class="fa-li"><i class="far fa-envelope"></i></span>whyaskmyemail@yahoo.com</li>
+                <li><span class="fa-li"><i class="far fa-clock"></i></span>Monday - Sunday : 24/7</li>
+            </ul>
+    
+            </div>
+            <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+        </div>
+        <!-- Footer Links -->
+    
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="#"> Fuhad Raheem</a>
+        </div>
+        <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer End /-->
+
+
+    <!--Custom jQuery-->
+    <script src="main.js"></script>
+    <!--Responsive Menu Script-->
+    </main>
+</body>
+</html>
